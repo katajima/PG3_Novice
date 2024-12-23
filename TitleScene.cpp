@@ -3,7 +3,9 @@
 
 void TitleScene::Init()
 {
-	tex = Novice::LoadTexture("1.png");
+	//tex = Novice::LoadTexture("1.png");
+
+
 
 }
 
@@ -22,6 +24,6 @@ void TitleScene::Update()
 void TitleScene::Draw()
 {
 
-	Novice::DrawSprite(0, 0, tex, 1280, 720, 0.0f, WHITE);
-
+	//Novice::DrawSprite(0, 0, tex, 1280, 720, 0.0f, WHITE);
+	Novice::DrawBox(0, 0, 1280, 720, 0.0f, BLUE, kFillModeSolid);
 }

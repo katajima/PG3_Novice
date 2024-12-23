@@ -1,6 +1,10 @@
 #pragma once
 #include "IScene.h"
-
+struct Vector2
+{
+	float x;
+	float y;
+};
 
 class StageScene : public IScene
 {
@@ -10,11 +14,7 @@ public:
 	void Draw() override;
 private:
 
-	struct Vector2
-	{
-		float x;
-		float y;
-	};
+
 
 	struct Object
 	{
@@ -25,7 +25,9 @@ private:
 	};
 	Object player_;
 	Object enemy_;
-	Object bullet_;
+	Object bullet_[50];
+
+	int t = 0;
 
 };
 
